@@ -208,7 +208,6 @@ class CalendarHeader extends Component {
 
   render() {
     const {style, testID} = this.props;
-
     return (
       <View
         testID={testID}
@@ -224,12 +223,14 @@ class CalendarHeader extends Component {
         importantForAccessibility={this.props.importantForAccessibility} // Android
       >
         <View style={this.style.header}>
-          {this.renderArrow('left')}
           <View style={this.style.headerContainer}>
             {this.renderHeader()}
             {this.renderIndicator()}
           </View>
-          {this.renderArrow('right')}
+          <View style={this.style.iconArrow}>
+          {this.renderArrow('left')}
+          {this.renderArrow('right')}    
+          </View>
         </View>
         {this.renderDayNames()}
       </View>

@@ -14,6 +14,15 @@ export default function (theme = {}) {
       marginTop: 6,
       alignItems: 'center'
     },
+    iconArrow:{
+      flexDirection: 'row',
+      paddingLeft: 10,
+      paddingRight: 10,
+      marginTop: 6,
+      alignItems: 'center',
+      width:85,
+      justifyContent: 'space-between',
+    },
     headerContainer: {
       flexDirection: 'row'
     },
